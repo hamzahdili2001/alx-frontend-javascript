@@ -9,7 +9,7 @@ export default function getFullResponseFromAPI(success) {
     if (success) {
       resolve(successMsg);
     } else {
-      reject(errorMsg);
+      reject(new Error(errorMsg));
     }
   });
 }
